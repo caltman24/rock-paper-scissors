@@ -1,0 +1,82 @@
+body {
+  user-select: none;
+}
+
+#title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: $fs-title;
+}
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-block: 2em;
+  text-align: center;
+
+  div {
+    font-size: $fs-scoreboard;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    p {
+      font-size: $fs-score;
+    }
+  }
+
+  .player-score {
+    color: blue;
+  }
+
+  .computer-score {
+    color: red;
+  }
+}
+
+#output {
+  text-align: center;
+
+  &-text {
+    font-size: $fs-score;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 25px;
+  }
+}
+
+.hands {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-top: 4em;
+  max-width: 90%;
+  margin-inline: auto;
+
+  div {
+    transition: transform 300ms ease;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05) translateY(-3px);
+      transition: transform 400ms ease;
+      background-color: $player-hover-color;
+      box-shadow: $bs-card;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: clamp(1rem, 1rem + 1.2vw, 2rem);
+  }
+}
+
+.active {
+  background-color: $computer-pick-color;
+  box-shadow: $bs-card;
+}

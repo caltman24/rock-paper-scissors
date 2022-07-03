@@ -1,0 +1,8 @@
+$fs-scoreboard: clamp(1rem, 1rem + 1.3vw, 1.7rem);
+$fs-score: clamp(1rem, 1rem + 1.5vw, 2rem);
+$fs-title: clamp(1rem, 1rem + 3vw, 3rem);
+
+$player-hover-color: hsla(115, 91%, 57%, 0.707);
+$computer-pick-color: hsla(0, 91%, 57%, 0.707);
+
+$bs-card: 0 0 10px rgba(0, 0, 0, 0.5);
